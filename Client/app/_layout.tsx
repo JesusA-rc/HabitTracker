@@ -9,9 +9,16 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <View style={tw`flex-1 bg-stone-900`}>
         <StatusBar style="light" />
-        <Stack screenOptions={{ headerShown: false, contentStyle: tw`bg-stone-900` }}>
+        <Stack screenOptions={{ headerShown: false, contentStyle: tw`bg-transparent` }}>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="new-activity" options={{ presentation: 'modal', headerShown: false }} />
+          <Stack.Screen 
+            name="new-activity" 
+            options={{ 
+              presentation: 'transparentModal', 
+              animation: 'slide_from_bottom',
+              headerShown: false,
+            }} 
+          />
         </Stack>
       </View>
     </SafeAreaProvider>
