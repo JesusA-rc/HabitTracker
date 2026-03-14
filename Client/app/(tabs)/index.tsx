@@ -7,7 +7,7 @@ import { WeekTracker } from '../../components/molecules/WeekTracker';
 export default function HomeScreen() {
   return (
     <View style={tw`flex-1 bg-stone-900`}>
-      <Header name="Adrián" photoUrl="https://i.pravatar.cc/150?img=11" />
+      <Header name="Adrián" photoUrl="https://images.steamusercontent.com/ugc/930431644832714552/5F7B156754EC7FBCB0EC7628963216B5E146BDA5/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" />
       <WeekTracker />
       <ScrollView style={tw`flex-1 px-6 pt-2`}>
         <View style={tw`bg-stone-800 rounded-3xl p-6 mb-4`}>

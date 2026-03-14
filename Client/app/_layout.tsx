@@ -11,6 +11,7 @@ export default function RootLayout() {
         <StatusBar style="light" />
         <Stack screenOptions={{ headerShown: false, contentStyle: tw`bg-stone-900` }}>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="new-activity" options={{ presentation: 'modal', headerShown: false }} />
         </Stack>
       </View>
     </SafeAreaProvider>
