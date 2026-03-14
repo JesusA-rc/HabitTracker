@@ -13,9 +13,9 @@ export const Header = ({ name, photoUrl }: HeaderProps) => {
   const insets = useSafeAreaInsets();
 
   return (
-    <View style={[tw`flex-row justify-between items-center px-6 pb-4 bg-stone-900`, { paddingTop: insets.top + 16 }]}>
+    <View style={[tw`flex-row justify-between items-center px-6 pb-6 bg-[#3a4750] rounded-b-3xl`, { paddingTop: insets.top + 16 }]}>
       <View>
-        <Text style={tw`text-stone-400 text-sm mb-1`}>Bienvenido de nuevo,</Text>
+        <Text style={tw`text-stone-300 text-sm mb-1`}>Bienvenido de nuevo,</Text>
         <Text style={tw`text-stone-100 text-2xl font-bold tracking-tight`}>Hola {name}</Text>
       </View>
       <Avatar uri={photoUrl} size={14} />
